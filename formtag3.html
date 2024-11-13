@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      var a = 10;
+      function func1() {
+        console.log("a=" + a);
+        b = 200;
+      }
+      func1();
+      c = 300;
+    </script>
+  </head>
+  <body>
+    <form action="https://www.baidu.com/s" target="_blank" method="get">
+      <input type="text" name="wd" />
+      <button>submit</button>
+    </form>
+
+    <p></p>
+    <hr />
+    <form action="">
+      <fieldset style="width: 50px">
+        <legend>Basic Information</legend>
+        <!-- label connection option1 -->
+        <br />
+        <label for="test"> Name: </label>
+        <input
+          id="test"
+          type="text"
+          name="name"
+          maxlength="10"
+          placeholder="please input your name"
+          autocomplete="on"
+        /><br />
+        <!-- label connection option2 -->
+        <label>
+          Password:
+          <input
+            type="password"
+            name="pwd"
+            value="123456"
+            maxlength="10"
+            minlength="5"
+            autofocus
+          />
+        </label>
+        <br />
+        Haircolor:
+        <label><input type="radio" name="hcolor" value="r" checked />red</label>
+        <label><input type="radio" name="hcolor" value="bl" />black</label>
+        <label><input type="radio" name="hcolor" value="br" />brown</label>
+        <label><input type="radio" name="hcolor" value="p" />pink</label>
+        <label><input type="radio" name="hcolor" value="g" />green</label>
+        <br />
+      </fieldset>
+      <br />
+      <fieldset style="width: 150px">
+        <legend>Secondary Information</legend>
+        Favorite Food:
+        <input type="checkbox" name="food" value="sushi" checked />sushi
+        <input type="checkbox" name="food" value="noodle" />noodle
+        <input type="checkbox" name="food" value="dum" checked />dumpling
+        <input type="checkbox" name="food" value="bur" />burger
+        <input type="checkbox" name="food" value="san" checked />sandwich <br />
+        <input type="hidden" name="secure" value="123" />
+
+        <br />
+        Introduce yourself:
+        <textarea name="intro" id="test2" cols="30" rows="10"></textarea>
+        <br />
+        Have you received any awards?
+        <select name="awards" id="">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+          <option value="not sure" selected>Not Sure</option>
+        </select>
+        <br />
+        <input type="text" list="mydata" name="testdatalist" />
+        <datalist id="mydata">
+          <option value="abc">abc</option>
+          <option value="bcd">bcd</option>
+          <option value="a">a</option>
+          <option value="bbc">bbc</option>
+          <option value="ccc">ccc</option>
+        </datalist>
+      </fieldset>
+      <br />
+      <button type="button">Validate</button>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+      <input type="button" value="Validate" />
+    </form>
+  </body>
+</html>
